@@ -1,0 +1,24 @@
+.header{
+  position: fixed;
+}
+
+.brand { 
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+}
+
+.navbar-default{
+	background-color: rgba(0, 0, 0, 0.16);
+	border-color: transparent;
+}
+
+.navbar-default .navbar-brand{
+	font-size: 30px;
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}

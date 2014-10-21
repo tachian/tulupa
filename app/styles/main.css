@@ -1,0 +1,22 @@
+body{
+  color: white;
+  background: url('http://tulupa.s3.amazonaws.com/home/highlight.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.highlight{
+  text-align: center;
+  position: fixed;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+}
+
