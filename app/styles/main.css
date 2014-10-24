@@ -1,9 +1,8 @@
 body{
   color: white;
-  background: url('http://tulupa.s3.amazonaws.com/home/highlight.jpg') no-repeat center center fixed;
+  background: url('http://tulupa.s3.amazonaws.com/home/highlight.jpg') no-repeat center fixed;
   background-size: cover;
 }
-
 
 .highlight{
   text-align: center;
