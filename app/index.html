@@ -14,12 +14,33 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
+    <meta name="google-site-verification" content="jEu7ia3Jrozl5QKSwKzBLZXgEn170KawqnPwx3NpoOE" />
     <!-- endbuild -->
   </head>
   <body ng-app="tulupaApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1558443754387703',
+        xfbml      : true,
+        version    : 'v2.1'
+      });
+    };
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=1558443754387703&version=v2.0";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
 
 
     <!-- Header -->
@@ -28,16 +49,16 @@
     <div ng-view=""></div>
 
     <div class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-4 col-xs-offset-4
-                      col-sm-2 col-sm-offset-8
-                      col-md-2 col-md-offset-8
-                      col-lg-2 col-lg-offset-8">
+          <div class="col-xs-4 col-xs-offset-2
+                      col-sm-3 col-sm-offset-3
+                      col-md-2 col-md-offset-4
+                      col-lg-2 col-lg-offset-4">
             <img class="img-responsive" ng-src="http://tulupa.s3.amazonaws.com/home/app_store.png">
           </div>
           <div class="col-xs-4 
-                      col-sm-2
+                      col-sm-3
                       col-md-2
                       col-lg-2">
             <img class="img-responsive" ng-src="http://tulupa.s3.amazonaws.com/home/google-play.png">
