@@ -11,6 +11,21 @@ body{
   background-color: rgba(0, 0, 0, 0.16);
 }
 
+.about{
+  text-align: center;
+  position: fixed;
+  top: 15%;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.privacy{
+  position: fixed;
+  top: 15%;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0, 0.16);
+  overflow: scroll;
+}
+
 .footer{
   position: absolute;
   bottom: 20px;
@@ -18,3 +33,4 @@ body{
   height: 60px;
   background-color: transparent;
 }
+
