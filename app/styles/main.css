@@ -1,7 +1,16 @@
 body{
   color: white;
-  background: url('http://tulupa.s3.amazonaws.com/home/highlight.jpg') no-repeat center fixed;
+  background-image: url(http://tulupa.s3.amazonaws.com/home/highlight.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
   background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  height: 600px;
 }
 
 .highlight{
