@@ -350,6 +350,30 @@ module.exports = function (grunt) {
       ]
     },
 
+    ngconstant: {
+      // targets
+      development: {
+        options: {
+          dest: '<%= yeoman.app %>/scripts/config.js',
+          name: 'appConfig',
+          space: '\t'
+        },
+        constants: {
+          API_SERVER: 'localhost:3000'
+        }
+      },
+      production: {
+        options: {
+          dest: '<%= yeoman.dist %>/scripts/config.js',
+          name: 'appConfig',
+          space: '\t'
+        },
+        constants: {
+          API_SERVER: 'tulupaapi.herokuapp.com'
+        }
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -382,6 +406,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'ngconstant:development',
       'wiredep',
       'concurrent:server',
       'autoprefixer',
@@ -405,6 +430,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'ngconstant:production',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
