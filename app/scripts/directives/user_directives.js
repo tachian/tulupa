@@ -12,8 +12,9 @@ userDirectives.directive('tlpResetPassword', ['$rootScope', '$location', functio
         $location.path('/');
       });
 
-      $rootScope.$on('password-set-error', function (event) {
+      $rootScope.$on('password-set-error', function (event, data) {
         $scope.showErrors = true;
+        $scope.errors = data.error;
         element.modal('show');
       });
 

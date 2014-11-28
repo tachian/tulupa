@@ -15,7 +15,6 @@ sessionServices.factory('Session', ['$location', '$http', '$q' ,'$rootScope', 'A
     resetPassword: function(reset_password_token, password, password_confirmation) {
       return $http.put('http://' + API_SERVER + '/password', {user: {reset_password_token: reset_password_token, password: password, password_confirmation: password_confirmation}})
       .then(function (response) { // Success
-        service.populateUser(response.data);
         $rootScope.$emit('password-set-success');
       },
       function (response) { // Error
